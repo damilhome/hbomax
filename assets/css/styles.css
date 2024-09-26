@@ -300,13 +300,103 @@ a {
     cursor: pointer;
 }
 
+/* UNIVERSES SECTION */
 
+.universes {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.universes__title {
+    font-weight: normal;
+    font-size: 2.1rem;
+    text-align: center;
+    margin-top: 20px;
+}
 
+.universes__channels {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
 
+.channel {
+    box-sizing: content-box;
+    width: 370px;
+    height: 555px;
+    margin-top: 40px;
+    border-radius: 10px;
+    transition: background 1s, transform 1s;
+}
 
+.channel img {
+    width: 100%;
+    height: auto;
+    transition: opacity 1s;
+}
+.channel:hover img {
+    opacity: 0;
+}
 
+/* HBO */
+.channel:nth-child(1) {
+    background: url('../images/hbo-hover_0.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.channel:nth-child(1):hover {
+    transform: scale(1.05);
+}
 
+/* MAX ORIGINALS */
+.channel:nth-child(2) {
+    background: url('../images/MAX-Hover.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.channel:nth-child(2):hover {
+    transform: scale(1.05);
+}
+
+/* DC */
+.channel:nth-child(3) {
+    background: url('../images/DC-Hover.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.channel:nth-child(3):hover {
+    transform: scale(1.05);
+}
+
+/* WB */
+.channel:nth-child(4) {
+    background: url('../images/WB-Hover.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.channel:nth-child(4):hover {
+    transform: scale(1.05);
+}
+
+/* CARTOON NETWORK */
+.channel:nth-child(5) {
+    background: url('../images/CN-Hover.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.channel:nth-child(5):hover {
+    transform: scale(1.05);
+}
+
+/* CHAMPIONS LEAGUE */
+.channel:nth-child(6) {
+    background: url('../images/UCL-Hover.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.channel:nth-child(6):hover {
+    transform: scale(1.05);
+}
 
 
 @keyframes wiggle {
