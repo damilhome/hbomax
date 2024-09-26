@@ -4,7 +4,6 @@ html {
 }
 
 body {
-    min-height: 100vh;
     background: url('../images/background-movies-series.png');
     background-size: cover;
 }

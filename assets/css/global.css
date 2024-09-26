@@ -78,6 +78,7 @@ a {
 }
 
 .btn__gradient:hover {
+    cursor: pointer;
     background-position: 100%;
     border: 2px solid var(--secondary-color);
 }
@@ -135,14 +136,14 @@ a {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 80px;
 }
 
 .footer__links {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin: 200px 0 20px;
+    margin: 120px 0 20px;
     list-style: none;
 }
 
