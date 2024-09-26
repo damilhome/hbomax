@@ -193,42 +193,6 @@ a {
     font-weight: 300;
 }
 
-@keyframes wiggle {
-    0% {
-        transform: rotate(0);
-    }
-    5% {
-        transform: rotate(-10deg);
-    }
-    10% {
-        transform: rotate(10deg);
-    }
-    15% {
-        transform: rotate(-15deg);
-    }
-    20% {
-        transform: rotate(15deg);
-    }
-    25% {
-        transform: rotate(-10deg);
-    }
-    30%, 100% {
-        transform: rotate(0);
-    }
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 /* PLANS SECTION */
 
 .plans {
@@ -238,14 +202,17 @@ a {
 
 .plans__title {
     font-weight: normal;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     text-align: center;
+    margin-top: 120px;
 }
 
-.plans_cards {
+.plans__cards {
     display: flex;
     gap: 80px;
     margin: 50px 0 150px;
+    perspective: 1500px;
+    perspective-origin: top;
 }
 
 .plans__card {
@@ -256,6 +223,17 @@ a {
     flex-direction: column;
     justify-content: space-between;
     row-gap: 50px;
+    transition: transform 1s;
+}
+
+.plans__cards:has(.plans__card:nth-child(1):hover)
+  .plans__card:nth-child(2) {
+  transform: rotateY(-45deg);
+}
+
+.plans__cards:has(.plans__card:nth-child(2):hover)
+  .plans__card:nth-child(1) {
+  transform: rotateY(45deg);
 }
 
 .card__title {
@@ -295,11 +273,64 @@ a {
     width: 85%;
     margin: 0 auto;
     padding: 20px;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 30px;
     color: white;
     letter-spacing: 2px;
     font-weight: bold;
     background: var(--btn-bg-color-gradient);
     background-size: 250%;
+    transition: background-position 1s, border .5s, transform 1s;
+}
+
+.card__button:hover {
+    background-position: 100%;
+    border: 2px solid var(--secondary-color);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0);
+    }
+    5% {
+        transform: rotate(-10deg);
+    }
+    10% {
+        transform: rotate(10deg);
+    }
+    15% {
+        transform: rotate(-15deg);
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    30%, 100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
