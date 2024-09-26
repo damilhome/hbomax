@@ -3,45 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HBO Max Danilo</title>
+    <title>HBO Max</title>
+    <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- FONT AWASOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav class="menu">
         <a href="index.html"><img src="assets/images/hbo-logo.svg" alt="hbo logo" class="menu__logo"></a>
         <ul class="menu__list">
             <li class="menu__item">
-                <a href="#" class="menu__link">ENTRAR</a>
+                <a href="signIn.html" class="menu__link">ENTRAR</a>
             </li> 
             <li class="menu__item">
-                <a href="#" class="menu__link">ASSINE AGORA</a>
+                <a href="#plans" class="menu__link">ASSINE AGORA</a>
             </li>
         </ul>
     </nav>
-    <main>
-        <header class="header">
-            <div class="header__container">
-                <div class="header__channels">
-                    <img src="assets/images/hbo.png" alt="hbo logo" class="header__logo">
-                    <img src="assets/images/dc.png" alt="dc logo" class="header__logo">
-                    <img src="assets/images/wb.png" alt="wb logo" class="header__logo">
-                    <img src="assets/images/cartoon-network_neutral.png" alt="cartoon network logo" class="header__logo">
-                    <img src="assets/images/max_originals.png" alt="max originals logo" class="header__logo">
-                </div>
-                <h1 class="header__title">
-                    <span class="header__title--light">CURTA AS MELHORES HISTÓRIAS</span>
-                    PARA TODO MUNDO
-                </h1>
-                <div class="header__divider"></div>
-                <div class="header__price">
-                    <p>Assinaturas a partir de</p>
-                    <p><span class="header__price--big">R$14,15 </span> /mês*</p>
-                </div>
-                <a href="#" class="header__btn">ASSINE AGORA</a>
-                <p class="header__note">*aplicável ao plano anual com o pagamento antecipado.</p>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__channels">
+                <img src="assets/images/hbo.png" alt="hbo logo" class="header__logo">
+                <img src="assets/images/dc.png" alt="dc logo" class="header__logo">
+                <img src="assets/images/wb.png" alt="wb logo" class="header__logo">
+                <img src="assets/images/cartoon-network_neutral.png" alt="cartoon network logo" class="header__logo">
+                <img src="assets/images/max_originals.png" alt="max originals logo" class="header__logo">
             </div>
-            <div class="header__transition"></div>
-        </header>
+            <h1 class="header__title">
+                <span class="header__title--light">CURTA AS MELHORES HISTÓRIAS</span>
+                PARA TODO MUNDO
+            </h1>
+            <div class="header__divider"></div>
+            <div class="header__price">
+                <p>Assinaturas a partir de</p>
+                <p><span class="header__price--big">R$14,15 </span> /mês*</p>
+            </div>
+            <a href="#plans" class="header__btn">ASSINE AGORA</a>
+            <p class="header__note">*aplicável ao plano anual com o pagamento antecipado.</p>
+        </div>
+        <div class="header__transition"></div>
+    </header>
+    <main>
         <section class="plans" id='plans'>
             <div class="plans_container">
                 <h2 class="plans__title">Conheça nossos planos e economize na assinatura trimestral ou anual com o pagamento antecipado.</h2>
@@ -111,5 +115,41 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__information">
+            <ul class="footer__links">
+                <li>
+                    <a href="https://www.max.com/br/pt/sitemap" class="footer__link">AGORA NA HBO MAX</a>
+                </li>
+                <li>
+                    <a href="https://www.max.com/br/pt" class="footer__link">EM BREVE</a>
+                </li>
+                <li>
+                    <a href="https://www.max.com/br/pt/movies" class="footer__link">FILME EM DESTAQUE</a>
+                </li>
+                <li>
+                    <a href="https://www.max.com/br/pt/shows" class="footer__link">SÉRIES</a>
+                </li>
+                <li>
+                    <a href="https://help.max.com/BR-pt/Home/Index" class="footer__link">AJUDA</a>
+                </li>
+            </ul>
+            <p class="footer__copy">&copy; 2022 WarnerMedia Direct Latin America, LLC. Todos os direitos reservados. HBO Max é usado sob licença.</p>
+        </div>
+        <div class="footer__socialMedia">
+            <a href="https://www.facebook.com/HBOMaxBr/">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/HBOMaxBR">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/hbomaxbr/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/c/hbomaxbr">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
