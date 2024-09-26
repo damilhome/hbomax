@@ -116,3 +116,190 @@ a {
     color: #000;
 }
 
+/* HEADER */
+
+.header {
+    padding: 100px 0 300px;
+    margin-top: 59px;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite alternate;
+}
+
+.header__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    
+}
+
+.header__channels {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.header__title {
+    font-size: 3rem;
+
+}
+
+.header__title--light {
+    display: block;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.header__divider {
+    width: 70%;
+    max-width: 700px;
+    height: 5px;
+    background: var(--divider-bg-color);
+}
+
+.header__price {
+    font-size: 1.3rem;
+}
+
+.header__price--big {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+}
+
+.header__btn {
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 15px 50px;
+    border: 2px solid transparent;
+    border-radius: 45px;
+    background: var(--btn-bg-color-gradient);
+    background-size: 250%;
+    animation: wiggle 3s ease-out infinite;
+    transition: background-position 1s, border .5s;
+}
+
+.header__btn:hover {
+    background-position: 100%;
+    border: 2px solid var(--secondary-color);
+}
+
+.header__note {
+    max-width: 300px;
+    font-weight: 300;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0);
+    }
+    5% {
+        transform: rotate(-10deg);
+    }
+    10% {
+        transform: rotate(10deg);
+    }
+    15% {
+        transform: rotate(-15deg);
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    30%, 100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* PLANS SECTION */
+
+.plans {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.plans__title {
+    font-weight: normal;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.plans_cards {
+    display: flex;
+    gap: 80px;
+    margin: 50px 0 150px;
+}
+
+.plans__card {
+    background: var(--card-bg-color);
+    padding: 40px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+
+.card__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__title h3 {
+    font-size: 1.5rem;
+}
+
+.card__title--big {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    color: var(--secondary-color);
+}
+
+.card__benefits {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.card__benefits li {
+    margin-top: 20px;
+}
+
+.card__benefits li::before {
+    content: '+';
+    margin-right: 10px;
+    color: white;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.card__button {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    background: var(--btn-bg-color-gradient);
+    background-size: 250%;
+}
