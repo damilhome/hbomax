@@ -24,11 +24,16 @@
         </ul>
     </nav>
     <main class="login">
-        <div class="login__container">
+        <form class="login__form">
             <h1 class="login__title">ENTRAR</h1>
-            <p class="login__question">Você tme uma conta da HBO Max?</p>
-            <form action=""></form>
-        </div>
+            <p class="login__question">Você tem uma conta da HBO Max?</p>
+            <input type="email" name="login" id="email" class="login__input" placeholder="Endereço de e-mail">
+            <input type="password" name="login" id="password" class="login__input" placeholder="Senha">
+            <div class="login__buttons">
+                <button type="submit" class="login__submit btn__gradient">ENTRAR</button>
+                <a href="#" class="login__forgot">Esqueceu a senha?</a>
+            </div>
+        </form>
     </main>
     <footer class="footer">
         <div class="footer__information">

@@ -68,6 +68,20 @@ a {
     background: var(--secondary-color);
 }
 
+/* BUTTON STYLES */
+
+.btn__gradient {
+    border: 2px solid transparent;
+    background: var(--btn-bg-color-gradient);
+    background-size: 250%;
+    transition: background-position 1s, border .5s;
+}
+
+.btn__gradient:hover {
+    background-position: 100%;
+    border: 2px solid var(--secondary-color);
+}
+
 /* NAVBAR */
 .menu {
     display: flex;

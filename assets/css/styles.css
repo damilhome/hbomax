@@ -62,17 +62,8 @@
     letter-spacing: 2px;
     font-weight: bold;
     padding: 15px 50px;
-    border: 2px solid transparent;
     border-radius: 45px;
-    background: var(--btn-bg-color-gradient);
-    background-size: 250%;
     animation: wiggle 3s ease-out infinite;
-    transition: background-position 1s, border .5s;
-}
-
-.header__btn:hover {
-    background-position: 100%;
-    border: 2px solid var(--secondary-color);
 }
 
 .header__note {
@@ -165,21 +156,10 @@
     width: 85%;
     margin: 0 auto;
     padding: 20px;
-    border: 2px solid transparent;
     border-radius: 30px;
     color: white;
     letter-spacing: 2px;
     font-weight: bold;
-    background: var(--btn-bg-color-gradient);
-    background-size: 250%;
-    transition: background-position 1s, border .5s, transform 1s;
-}
-
-.card__button:hover {
-    background-position: 100%;
-    border: 2px solid var(--secondary-color);
-    transform: scale(1.1);
-    cursor: pointer;
 }
 
 /* UNIVERSES SECTION */

@@ -8,3 +8,70 @@ body {
     background: url('../images/background-movies-series.png');
     background-size: cover;
 }
+
+.login__form {
+    max-width: 800px;
+    margin: 180px auto 0;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: var(--form-bg-color);
+}
+
+.login__title {
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.login__input {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+    padding: 15px;
+    border: var(--form-field-border);
+    border-radius: 10px;
+    color: var(--text-color);
+    font-size: 1rem;
+    background-color: var(--form-field-bg-color);
+}
+
+.login__input::placeholder {
+    color: var(--form-field-placeholder);
+}
+
+.login__input:focus {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.login__input:focus:invalid {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.login__input:invalid {
+    border-color: var(--form-field-error);
+}
+
+.login__buttons {
+    margin-top: 50px;
+}
+
+.login__submit {
+    margin-right: 25px;
+    letter-spacing: 4px;
+    font-size: .75rem;
+    font-weight: bold;
+    padding: 15px 50px;
+    border-radius: 45px;
+    color: var(--text-color);
+}
+
+.login__forgot {
+    font-weight: bold;
+    color: var(--link-color);
+    transition: color .5s;
+}
+
+.login__forgot:hover {
+    color: var(--text-color);
+}
